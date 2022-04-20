@@ -5,7 +5,7 @@ def split_text(text):
 
 def get_bad_words(path):
        with open(path) as f:
-              lines = f.readlines()
+              lines = f.read().splitlines()
        return lines
 
 
@@ -16,7 +16,7 @@ def replace_bad_word(word):
 
 
 def check_bad_word(text, path):
-        result = ''
+        result = []
         bad_bool = False
         words = split_text(text)
         bad_set = get_bad_words(path)
@@ -25,6 +25,7 @@ def check_bad_word(text, path):
                      word = replace_bad_word(word)
                      bad_bool = True
 
-              result += word
+              result.append(word)
 
+        result = " ".join(result)
         return result, bad_bool
