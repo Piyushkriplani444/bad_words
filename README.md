@@ -22,3 +22,19 @@ $ python main.py --text "You are an ass" --path ./data/badwords.txt
 !!Warning bad word(s) are present!!
 You are an $$$
 ```
+
+### Command to Run Test Cases
+```
+$ pytest
+```
+
+```
+============================= test session starts =============================
+platform win32 -- Python 3.8.8, pytest-7.1.1, pluggy-1.0.0
+rootdir: C:\Users\piyush\Desktop\bad_words
+collected 1 item
+
+tests\test_check_bad_word.py .                                           [100%]
+
+============================== 1 passed in 0.04s ==============================
+```
