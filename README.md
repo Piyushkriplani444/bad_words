@@ -1,8 +1,32 @@
 # bad_words
 
+To run the code, please clone the repository
+
+### Create virtual environment
+```
+python -m venv venv
+```
+
+### Activate virtual environment
+>> Windows:
+>
+> `venv\Scripts\activate`
+
+>> Linux:
+>
+> `source venv/bin/activate`
+
+### Install dependencies
+```
+pip install - r requirements.txt
+```
+
 ### Help tace to run code
 ```
-$ python assignment/main.py -h
+python assignment/main.py -h
+```
+#### Response
+```
 usage: main.py [-h] --text TEXT --path PATH
 
 optional arguments:
@@ -14,7 +38,7 @@ optional arguments:
 
 #### Example run comand
 ```
-$ python assignment/main.py --text "You are an ass" --path ./data/badwords.txt
+python assignment/main.py --text "You are an ass" --path ./data/badwords.txt
 
 ```
 #### Result
