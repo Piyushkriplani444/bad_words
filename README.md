@@ -1,6 +1,10 @@
 # bad_words
 
 To run the code, please clone the repository
+Move to bad_words directory
+```
+cd bad_words
+```
 
 ### Create virtual environment
 ```
@@ -38,7 +42,7 @@ optional arguments:
 
 #### Example run comand
 ```
-python assignment/main.py --text "You are an ass" --path ./data/badwords.txt
+python assignment/main.py --text "You are an ass" --path ./assignment/data/badwords.txt
 
 ```
 #### Result
