@@ -14,11 +14,11 @@ python -m venv venv
 ### Activate virtual environment
 >> Windows:
 >
-> `venv\Scripts\activate`
+> ```venv\Scripts\activate```
 
 >> Linux:
 >
-> `source venv/bin/activate`
+> ```source venv/bin/activate```
 
 ### Install dependencies
 ```
@@ -53,7 +53,7 @@ You are an $$$
 
 #### Command to run the api
 ```
-$ python assignment/api.py
+python assignment/api.py
 ```
 ##### Response
 ```
@@ -70,7 +70,7 @@ $ python assignment/api.py
 
 #### Example to hit api using curl
 ```
-$ curl --request GET 127.0.0.1:5000/
+curl --request GET 127.0.0.1:5000/
 ```
 ##### Response
 ```
@@ -84,7 +84,7 @@ $ curl --request GET 127.0.0.1:5000/
 
 #### Example to post bad words o api
 ```
-$ curl -i -X POST -H "Content-Type: application/json" -d '{"text":"You are a bad ass"}' 127.0.0.1:5000/bad_words/
+curl -i -X POST -H "Content-Type: application/json" -d '{"text":"You are a bad ass"}' 127.0.0.1:5000/bad_words/
 ```
 ##### Response
 ```
@@ -105,7 +105,7 @@ Content-Length: 50
 
 ### Command to Run Test Cases
 ```
-$ pytest
+pytest
 ```
 
 ```
