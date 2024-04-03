@@ -15,7 +15,7 @@ def badwords():
 	if(request.method == 'POST'):
 		request_data = request.get_json()
 		text = request_data['text']
-		result, bad_bool = check_bad_word(text, './data/badwords.txt')
+		result, bad_bool = check_bad_word(text, './core/data/badwords.txt')
 		bad_word_response = {
 		'text': result,
 		'bad': bad_bool

@@ -2,34 +2,41 @@
 
 To run the code, please clone the repository
 Move to bad_words directory
+
 ```
 cd bad_words
 ```
 
 ### Create virtual environment
+
 ```
 python -m venv venv
 ```
 
 ### Activate virtual environment
->> Windows:
->
-> ```venv\Scripts\activate```
 
->> Linux:
+> > Windows:
 >
-> ```source venv/bin/activate```
+> `venv\Scripts\activate`
+
+> > Linux:
+>
+> `source venv/bin/activate`
 
 ### Install dependencies
+
 ```
 pip install - r requirements.txt
 ```
 
 ### Help tace to run code
+
 ```
-python assignment/main.py -h
+python core/main.py -h
 ```
+
 #### Response
+
 ```
 usage: main.py [-h] --text TEXT --path PATH
 
@@ -41,21 +48,27 @@ optional arguments:
 ```
 
 #### Example run comand
-```
-python assignment/main.py --text "You are an ass" --path ./assignment/data/badwords.txt
 
 ```
+python core/main.py --text "You are an ass" --path ./core/data/badwords.txt
+
+```
+
 #### Result
+
 ```
 !!Warning bad word(s) are present!!
 You are an $$$
 ```
 
 #### Command to run the api
+
 ```
-python assignment/api.py
+python core/api.py
 ```
+
 ##### Response
+
 ```
  * Serving Flask app 'api' (lazy loading)
  * Environment: production
@@ -69,10 +82,13 @@ python assignment/api.py
 ```
 
 #### Example to hit api using curl
+
 ```
 curl --request GET 127.0.0.1:5000/
 ```
+
 ##### Response
+
 ```
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -83,10 +99,13 @@ curl --request GET 127.0.0.1:5000/
 ```
 
 #### Example to post bad words o api
+
 ```
 curl -i -X POST -H "Content-Type: application/json" -d '{"text":"You are a bad ass"}' 127.0.0.1:5000/bad_words/
 ```
+
 ##### Response
+
 ```
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -102,8 +121,8 @@ Content-Length: 50
 }
 ```
 
-
 ### Command to Run Test Cases
+
 ```
 pytest
 ```
